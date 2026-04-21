@@ -1,0 +1,22 @@
+processed
+runs
+results
+data/models
+outputs
+imgs
+artifacts
+# Ignore Python byte-compiled files
+__pycache__
+*.pyc
+*.pyo
+
+# Ignore log files
+*.log
+*.json
+
+wandb
+.vscode
+data/aids
+data/proteins_g
+
+envs
