@@ -114,11 +114,8 @@ def build_graph_from_matrix(adjm, node_feats, device='cpu'):
     # get edge weights
     d = adjm[adjm.nonzero()]
     # create a graph
-    g = dgl.DGLGraph()
-    # add nodes
-    g.add_nodes(adjm.shape[0])
-    # add edges and edge weights
-    g.add_edges(src, dst, {'d': torch.tensor(d).float().view(-1, 1)})
+    g = dgl.graph((src, dst), num_nodes=adjm.shape[0])
+    g.edata["d"] = torch.tensor(d).float().view(-1, 1)
     # add node attribute, i.e. the geographical features of census tract
     g.ndata['attr'] = torch.from_numpy(node_feats).to(device)
     # compute the degree norm
@@ -133,8 +130,9 @@ def comp_deg_norm(g):
     compute the degree normalization factor which is 1/in_degree
     '''
     in_deg = g.in_degrees(range(g.number_of_nodes())).float().numpy()
-    norm = 1.0 / in_deg
-    norm[np.isinf(norm)] = 0
+    norm = np.zeros_like(in_deg)
+    nonzero = in_deg > 0
+    norm[nonzero] = 1.0 / in_deg[nonzero]
     return norm
 
 def mini_batch_gen(train_data, mini_batch_size, num_nodes, negative_sampling_rate = 0):

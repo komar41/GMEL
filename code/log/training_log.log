@@ -5378,3 +5378,14 @@
 2019-08-23 06:01:48,040 - #layers1_emb128_multitask(1, 0, 0) - DEBUG - Evaluation on train dataset:
 2019-08-23 06:01:48,040 - #layers1_emb128_multitask(1, 0, 0) - DEBUG - Epoch 0119 | Loss = 9740.6611
 2019-08-23 06:01:48,040 - #layers1_emb128_multitask(1, 0, 0) - DEBUG - RMSE 6.8198 | MAE 2.5895 | MAPE 0.9508 | CPC 0.5511 | CPL 1.0000 |
+2026-04-20 17:02:30,250 - single_gmel#layers1_emb128_multitask(0.5, 0.25, 0.25) - INFO - Epoch 0000 | valid loss 22282.9727 | RMSE 8.6162 | MAE 3.4147 | MAPE 1.3894 | CPC 0.4364 | CPL 1.0000
+2026-04-20 17:02:30,378 - single_gmel#layers1_emb128_multitask(0.5, 0.25, 0.25) - INFO - Saved new best checkpoint and embeddings from epoch 0
+2026-04-20 17:11:53,712 - single_gmel#layers1_emb128_multitask(0.5, 0.25, 0.25) - INFO - Epoch 0005 | valid loss 74450.4062 | RMSE 18.0564 | MAE 7.8476 | MAPE 4.5828 | CPC 0.3108 | CPL 1.0000
+2026-04-20 17:21:54,597 - single_gmel#layers1_emb128_multitask(0.5, 0.25, 0.25) - INFO - Epoch 0010 | valid loss 44314.5117 | RMSE 12.4235 | MAE 6.2604 | MAPE 3.6131 | CPC 0.3730 | CPL 1.0000
+2026-04-20 17:31:41,006 - single_gmel#layers1_emb128_multitask(0.5, 0.25, 0.25) - INFO - Epoch 0015 | valid loss 32267.9824 | RMSE 9.9541 | MAE 5.1545 | MAPE 2.8926 | CPC 0.4131 | CPL 1.0000
+2026-04-20 17:41:01,834 - single_gmel#layers1_emb128_multitask(0.5, 0.25, 0.25) - INFO - Epoch 0020 | valid loss 24865.3945 | RMSE 8.3654 | MAE 4.0527 | MAPE 2.0311 | CPC 0.4138 | CPL 1.0000
+2026-04-20 17:41:01,966 - single_gmel#layers1_emb128_multitask(0.5, 0.25, 0.25) - INFO - Saved new best checkpoint and embeddings from epoch 20
+2026-04-20 17:50:12,603 - single_gmel#layers1_emb128_multitask(0.5, 0.25, 0.25) - INFO - Epoch 0025 | valid loss 21109.4395 | RMSE 8.0927 | MAE 4.0558 | MAPE 2.1544 | CPC 0.4636 | CPL 1.0000
+2026-04-20 17:50:12,735 - single_gmel#layers1_emb128_multitask(0.5, 0.25, 0.25) - INFO - Saved new best checkpoint and embeddings from epoch 25
+2026-04-20 18:00:00,021 - single_gmel#layers1_emb128_multitask(0.5, 0.25, 0.25) - INFO - Epoch 0030 | valid loss 18943.7188 | RMSE 7.6875 | MAE 3.7115 | MAPE 1.8922 | CPC 0.4827 | CPL 1.0000
+2026-04-20 18:00:00,160 - single_gmel#layers1_emb128_multitask(0.5, 0.25, 0.25) - INFO - Saved new best checkpoint and embeddings from epoch 30
